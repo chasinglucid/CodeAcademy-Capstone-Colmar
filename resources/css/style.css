@@ -129,9 +129,25 @@ header {
     display: flex;
 }
 
+
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    #section-1 {
+        flex-direction: column;
+    }
+}
+
 .section-1-banner {
     padding: 1.5rem;
     flex-basis: 60%;
+}
+
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-1-banner {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 .section-1-banner img {
@@ -144,6 +160,14 @@ header {
     justify-content: center;
 }
 
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-1-content {
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+}
+
 .section-1-content h1 {
     display: block;
     font-size: 2em;
@@ -154,21 +178,30 @@ header {
     font-weight: bold;
 }
 
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-1-content h1 {
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+}
+
 .section-1-content p {
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
 }
 
 .section-1-content a {
-    text-decoration: none;
-    color: white;
     background-color: #4A4A4A;
+    color: white;
     padding: 0.5rem;
     text-align: center;
+    text-decoration: none;
 }
 
 .section-1-content a:hover {
-    color: #4A4A4A;
     background-color: white;
+    color: #4A4A4A;
+
 }
 
 /**** SECTION 2 ****/
