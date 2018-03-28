@@ -129,7 +129,6 @@ header {
     display: flex;
 }
 
-
 /* mobile specific css */
 @media only screen and (max-width: 450px) {
     #section-1 {
@@ -201,10 +200,27 @@ header {
 .section-1-content a:hover {
     background-color: white;
     color: #4A4A4A;
-
 }
 
 /**** SECTION 2 ****/
+#section-2 {
+    display: flex;
+}
+
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    #section-2 {
+        flex-direction: column;
+    }
+}
+
+.section-2-main {
+    
+}
+
+.section-2-subs {
+    
+}
 
 /**** SECTION 3 ****/
 
