@@ -1,4 +1,4 @@
-/* global variables */
+/* GLOBAL */
 
 html {
     font-family: arial, sans-serif;
@@ -12,25 +12,27 @@ body {
     max-width: 960px;
 }
 
-/* header */
+.mobile-only {
+    display: none;
+}
+
+/* HEADER */
 header {
     height: 64px;
     margin: 0 24px;
 }
-header .desktop {
+header {
     padding: 0 24px;
 
 }
-header .mobile {
-    display:none;
-}
 
-.header-wrapper {
+.header-wrapper .desktop-only {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* school name and logo */
 .school {
     display: flex;
     justify-content: flex-start;
@@ -50,64 +52,61 @@ header .mobile {
     font-weight: 300;
 }
 
-nav {
+/* navigation */
+.menu {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     height: 64px;
 }
 
-nav div.menu {
-    align-items: flex-end;
-    display: flex;  
-    height: 100%;
-    align-items: center;
-}
-
-nav ul {
+.menu ul {
     list-style-type: none;
     padding: 0;
     display: flex;
+    align-items: center;
     flex-wrap: nowrap;
 }
 
-nav ul li {
+.menu ul li {
     padding: 0 8px;
     flex: 1 0 auto;
 }
 
-nav ul li:first-child {
+.menu ul li:first-child {
     padding-left: 0px;
 }
 
-nav ul li a {
+/* nav menu spacing in jeopardy; dump menu item css */
+@media only screen and (max-width: 673px) {
+    li.lg-desktop-only {
+        display: none;
+    }
+} /* mobile css */
+
+.menu ul li a, 
+.menu ul li img {
     display: block;
     text-decoration: none;
     color: black;
     padding: 10px;
 }
 
-nav ul li a:hover{
+.menu ul li a:hover{
     background-color: lightgray;
 }
 
-.menu-left {
-    
-}
 
-.menu-right {
-    padding-left: 8px;
-}
+/* footer */
+
 
 /* mobile specific css */
 @media only screen and (max-width: 450px) {
-    header .mobile {
-        display: block;
+    .desktop-only {
+        display:none !important;
     }
     
-    header .desktop {
-        display: none;
+    .mobile-only {
+        display: block;
     }
-}
-
-/* footer */
+} /* mobile css */
