@@ -1,4 +1,4 @@
-/* GLOBAL */
+/**** GLOBAL ****/
 
 html {
     font-family: arial, sans-serif;
@@ -27,10 +27,10 @@ body {
     }
 } /* mobile css */
 
-/* HEADER */
+/**** HEADER ****/
 header {
     height: 64px;
-    margin: 0 24px;
+    margin: 0 1.5rem;
 }
 
 .header-wrapper .desktop-only {
@@ -65,7 +65,7 @@ header {
 
 .schoolNameLight {
     color: #9B9B9B;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 /* navigation */
@@ -123,5 +123,59 @@ header {
     background-color: lightgray;
 }
 
-/* footer */
+/**** SECTION 1 ****/
+#section-1 {
+    background-color:  #D8D8D8;
+    display: flex;
+}
+
+.section-1-banner {
+    padding: 1.5rem;
+    flex-basis: 60%;
+}
+
+.section-1-banner img {
+    max-width: 100%;
+}
+
+.section-1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-1-content h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.section-1-content p {
+    margin: 1.5rem 0;
+}
+
+.section-1-content a {
+    text-decoration: none;
+    color: white;
+    background-color: #4A4A4A;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.section-1-content a:hover {
+    color: #4A4A4A;
+    background-color: white;
+}
+
+/**** SECTION 2 ****/
+
+/**** SECTION 3 ****/
+
+/**** SECTION 4 ****/
+
+/**** FOOTER ****/
 
