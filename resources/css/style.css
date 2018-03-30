@@ -12,6 +12,49 @@ body {
     width: 100%;
 }
 
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    h1 {
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 { 
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
 .mobile-only {
     display: none;
 }
@@ -50,17 +93,13 @@ header .mobile-only {
     justify-content: flex-start;
 }
 
-.school a#logo {
-    text-decoration: none;
-}
-
 .schoolName {
     line-height: 2rem;
 }
 
 .schoolNameBold {
     font-weight: bold;
-    color: black;
+    color: inherit;
 }
 
 .schoolNameLight {
@@ -113,10 +152,9 @@ header nav ul li:first-child {
 
 header nav ul li a, 
 header nav ul li img {
-    color: black;
+    color: inherit;
     display: block;
     padding: 10px;
-    text-decoration: none;
 }
 
 header nav ul li a:hover{
@@ -125,10 +163,15 @@ header nav ul li a:hover{
     border-radius: 6px;
 }
 
+/*** MAIN ***/
+main {
+    border: 1px solid #4A4A4A;
+}
+
 /**** SECTION 1 ****/
 #section-1 {
-    background-color:  #D8D8D8;
     display: flex;
+    background-color:  #D8D8D8;
 }
 
 /* mobile specific css */
@@ -139,7 +182,7 @@ header nav ul li a:hover{
 }
 
 .section-1-banner {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     flex-basis: 60%;
 }
 
@@ -169,25 +212,8 @@ header nav ul li a:hover{
     }
 }
 
-.section-1-content h1 {
-    display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-    .section-1-content h1 {
-        margin: 0;
-        padding-bottom: 2rem;
-    }
-}
-
 .section-1-content p {
+    font-weight: bold;
     margin-bottom: 1.5rem;
 }
 
@@ -196,7 +222,6 @@ header nav ul li a:hover{
     color: white;
     padding: 0.5rem;
     text-align: center;
-    text-decoration: none;
     border-radius: 6px;
 }
 
@@ -208,6 +233,7 @@ header nav ul li a:hover{
 /**** SECTION 2 ****/
 #section-2 {
     display: flex;
+    flex-direction: row;
 }
 
 /* mobile specific css */
@@ -218,11 +244,96 @@ header nav ul li a:hover{
 }
 
 .section-2-main {
-    
+    padding: 2rem 1.5rem;
+    flex-basis: 60%;
+    border-right: 1px solid lightgrey;
 }
 
+.section-2-main img {
+    padding-bottom: 2rem;
+    max-width: 100%;
+}
+
+.section-2-main  h2 {
+        margin: 0;
+        padding-bottom: 1.5rem;
+}
+
+.section-2-main p {
+     font-style: italic;
+    font-size: 0.95rem;
+}
+
+.section-2-main address {
+    font-size: 0.75rem;
+    padding: 2.5rem 0 0 0;
+     font-style: italic;
+}
+
+.section-2-main address a {
+     color: inherit;
+}
+
+.section-2-main address a:hover {
+    background-color: #ff5602;
+    color: white;
+    border-radius: 6px;
+}   
+
 .section-2-subs {
-    
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2-subs article {
+    border-top: 1px dotted lightgrey;
+    border-bottom: 1px dotted lightgrey;
+    padding: 5px;
+}
+
+.section-2-subs article:first-child {
+    border-top: 0;
+}
+
+.section-2-subs article:last-child {
+    background-color:  #D8D8D8;
+    border:0;
+}
+
+.section-2-sub-article {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-2-sub-img {
+    flex-basis: 35%;
+    padding: 1rem;
+}
+
+.section-2-sub-img img {
+    max-width: 100%;
+}
+
+.section-2-sub-content {
+    flex-basis: 65%;
+}
+
+.section-2-sub-content a {
+    color: #37b6ee;
+    font-weight: bold;
+}
+
+.section-2-sub-content a:hover {
+    background-color: #ff5602;
+    color: white;
+    border-radius: 6px;
+}
+
+.section-2-sub-content p {
+    font-size: 0.8rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 /**** SECTION 3 ****/
