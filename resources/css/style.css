@@ -286,10 +286,18 @@ main {
     flex-direction: column;
 }
 
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-2-subs {
+        padding: 1rem;
+        flex-basis:100%;
+    }
+}
+
+
 .section-2-subs article {
     border-top: 1px dotted lightgrey;
     border-bottom: 1px dotted lightgrey;
-    padding: 5px;
 }
 
 .section-2-subs article:first-child {
@@ -301,14 +309,42 @@ main {
     border:0;
 }
 
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-2-subs article:last-child {
+        background-color:  inherit;
+    }
+
+    .section-2-subs article {
+        border: 0;
+    }
+
+}
+
 .section-2-sub-article {
     display: flex;
     flex-direction: row;
 }
 
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-2-sub-article {
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+}
+
 .section-2-sub-img {
     flex-basis: 35%;
     padding: 1rem;
+}
+
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-2-sub-img {
+        padding: 0;
+        width: 100%;
+    }
 }
 
 .section-2-sub-img img {
@@ -319,6 +355,14 @@ main {
     flex-basis: 65%;
 }
 
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-2-sub-content {
+        flex-basis: 100%;
+        padding: 0 1rem;
+    }
+}
+
 .section-2-sub-content a {
     color: #37b6ee;
     font-weight: bold;
@@ -327,7 +371,7 @@ main {
 .section-2-sub-content a:hover {
     background-color: #ff5602;
     color: white;
-    border-radius: 6px;
+    border-radius: 0.375rem;
 }
 
 .section-2-sub-content p {
@@ -336,6 +380,12 @@ main {
     margin-bottom: 1em;
 }
 
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .section-2-sub-content p {
+        font-size: 1.25rem;
+    }
+}
 /**** SECTION 3 ****/
 
 /**** SECTION 4 ****/
