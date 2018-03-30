@@ -72,7 +72,7 @@ p {
 /* mobile specific css */
 @media only screen and (max-width: 450px) {
     .desktop-only {
-        display:none !important;
+        display:none;
     }
     
     .mobile-only {
@@ -89,11 +89,14 @@ header {
     justify-content: center;
 }
 
-header .desktop-only {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    min-width: 100%;
+/* desktop specific css */
+@media only screen and (min-width: 451px) {
+    header .desktop-only {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        min-width: 100%;
+    }
 }
 
 /* mobile specific css */
@@ -464,7 +467,57 @@ main {
     }
 }
 
-/**** SECTION 3 ****/
+/**** section 3 ****/
+
+#section-3 {
+    background-color: #eaebec;
+    padding: 2rem 4.5rem;
+}
+
+#section-3 h2 {
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.course-catalog {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.course {
+    flex-basis: 30%;
+    margin: 0 2rem 2rem 0;
+    background-color: white;
+}
+
+.course img {
+    height; auto;
+    max-width: 100%;
+}
+
+.course:nth-child(n+4) {
+    margin-bottom: 0;
+}
+
+.course:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.course article {
+     margin: 0 1rem 1.5rem 1rem;
+}
+
+.course p {
+    margin: 0.5rem 0;
+    color: #7a7a7a;
+}
+
+.course p:last-child {
+    margin-bottom: 0;
+}
 
 /**** SECTION 4 ****/
 
