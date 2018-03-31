@@ -72,7 +72,7 @@ p {
 /* mobile specific css */
 @media only screen and (max-width: 450px) {
     .desktop-only {
-        display:none;
+        display:none !important;
     }
     
     .mobile-only {
@@ -561,13 +561,6 @@ main {
     
 }
 
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-    #section-4 {
-        flex-direction: column;
-    }
-}
-
 #section-4 h2 {
     text-align: center;
     margin: 2rem 0 0 0;
@@ -589,13 +582,30 @@ main {
     max-width: 100%;
 }
 
+@media only screen and (max-width: 450px) {
+    .section-4-content-box {
+        margin: 1rem 0 1.5rem 0;
+    }
+    .section-4-video-article {
+        width: 100%;
+        flex-basis: 100%;
+        margin: 0;
+    }
+    .section-4-video-article video {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+}
+
 .section-4-video-article  h3 {
-        margin: 2rem 0 1.5rem 0;
+        margin: 1.5 0 0.5rem 0;
 }
 
 .section-4-video-article p {
     font-style: italic;
     font-size: 0.95rem;
+    margin-bottom: 0;
 }
 
 .section-4-subs {
@@ -604,26 +614,9 @@ main {
     flex-direction: column;
 }
 
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-    .section-4-subs {
-        padding: 1rem;
-        flex-basis:100%;
-    }
-
-}
-
 .section-4-subs article {
     margin-right: 1rem;
  }
-
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-    .section-4-subs article {
-        margin-right:  0;
-        padding-bottom: 4rem;
-    }
-}
 
 .section-4-subs article:first-child {
     border-top: 0;
@@ -636,25 +629,10 @@ main {
     flex-direction: row;
 }
 
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-    .section-4-sub-article {
-        flex-direction: column;
-        padding-bottom: 2rem;
-    }
-}
 
 .section-4-sub-img {
     flex-basis: 35%;
     padding: 1rem;
-}
-
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-    .section-4-sub-img {
-        padding: 0;
-        width: 100%;
-    }
 }
 
 .section-4-sub-img img {
@@ -666,14 +644,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-    .section-4-sub-content {
-        flex-basis: 100%;
-        padding: 0 1rem;
-    }
 }
 
 .section-4-sub-content a {
