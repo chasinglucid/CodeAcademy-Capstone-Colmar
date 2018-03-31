@@ -221,6 +221,7 @@ header nav ul li a:hover{
 /*** MAIN ***/
 main {
     border: 1px solid grey;
+    border-bottom: none;
 }
 
 /**** section 1 ****/
@@ -566,6 +567,9 @@ main {
     margin: 2rem 0 0 0;
 }
 
+#section-4 p {
+    color: #959595;
+}
 
 .section-4-content-box {
     display: flex;
@@ -663,4 +667,25 @@ main {
 }
 
 /**** FOOTER ****/
+footer {
+    padding: 1rem 1.5rem;
+    border: 1px solid grey;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
 
+footer span {
+    font-size: 0.75rem;
+    color: #a3a4a4;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-right-left {
+    padding-right: 0.5rem;
+}
