@@ -65,21 +65,6 @@ p {
     margin-right: 0;
 }
 
-.mobile-only {
-    display: none;
-}
-
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-    .desktop-only {
-        display:none !important;
-    }
-    
-    .mobile-only {
-        display: flex;
-    }
-} /* mobile css */
-
 /**** HEADER ****/
 header {
     height: 4rem;
@@ -689,3 +674,18 @@ footer span {
 .footer-right-left {
     padding-right: 0.5rem;
 }
+
+.mobile-only {
+    display: none;
+}
+
+/* mobile specific css */
+@media only screen and (max-width: 450px) {
+    .desktop-only {
+        display:none;
+    }
+    
+    .mobile-only {
+        display: flex;
+    }
+} /* mobile css */
