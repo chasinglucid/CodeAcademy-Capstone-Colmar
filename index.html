@@ -4,257 +4,262 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <!-- shows in browser title/tab -->
+  <meta charset="utf-8">
     <title>Colmar Academy</title>
 
-    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="esources/images/favicon.ico" type="image/x-icon">
-    <!-- stylesheet declaractions -->
-    <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+  <link rel="shortcut icon" href="resources/images/favicon.ico"
+        type="image/x-icon">
+  <link rel="icon" href="esources/images/favicon.ico" type="image/x-icon">
+  <!-- stylesheet declaractions -->
+  <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="resources/css/style.css" type="text/css" rel="stylesheet">
 
 </head>
-
 <body>
 
-    <!-- HEADER & NAV -->
-    <header>
-        
-        <!-- desktop header -->
-        <div class="desktop-only">
-        
-            <!-- school name & logo container -->
-            <div class="school">
-                   
-                <a id="logo" href="index.html"><img class="logo" src="resources/images/ic-logo.svg"  alt="school logo" /></a>
-                <span class="school-name-bold">COLMAR</span><span class="school-name-lt">ACADEMY</span>                   
-               
-            </div> <!-- school -->
-                
-            <!-- menu container -->
-            <nav>
-                <ul>
-                    <li><a href="#campus">On campus</a></li>
-                    <li><a href="#online">Online</a></li>
-                    <li class="lg-desktop-only"><a href="#companies">For companies</a></li>
-                    <li><a href="#signin">Sign in</a></li>
-                </ul>
-            </nav>
-        </div> <!-- desktop-only -->
+  <!-- HEADER & NAV -->
+  <header>
 
-        <!-- mobile header -->
-        <div class="mobile-only">
-        
-            <!-- menu container -->
-            <nav>
-                <ul>
-                    <li> <a href="index.html"><img  src="resources/images/ic-logo.svg" alt="school logo" /></a></li>
-                    <li><a href="#campus"><img  src="resources/images/ic-on-campus.svg" alt="On campus icon" /></a></li>
-                    <li><a href="#online"><img src="resources/images/ic-online.svg" alt="Online icon" /></a></li>
-                    <li><a href="#signin"><img  src="resources/images/ic-login.svg" alt="login icon" /></a></li>
-                </ul>
-            </nav>
-        </div> <!-- mobile-only -->
-                
-    </header>
+    <!-- navigation container -->
+    <nav>
+      <ul>
+        <li class="left">     
 
-    <!-- CONTENT -->
-    <main>
-        <!-- section 1/top section -->
-        <section id="section-1">
- 
-        <!-- banner section -->
-            <div class="section-1-banner">
-                <img src="resources/images/banner.jpg" alt="students studying">
-            </div>
-             
-            <!-- content section -->
-            <div class="section-1-content">
-                <h1>Learn something<br />new everyday</h1>
-                <p>Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit.</p>
-                <a href="#start-here">Start here</a>
-            </div>
+          <div class="school">              
+            <a id="logo" href="index.html">
+              <img class="logo" src="resources/images/ic-logo.svg"
+                 alt="school logo" />
+              <span class="school-name desktop-only">
+              <span class="school-name-bold">COLMAR</span>ACADEMY</span></a>
+
+          </div> <!-- school -->
+        </li>
+        
+        <li>
+          <a href="#campus">
+          <img class="mobile-only" src="resources/images/ic-on-campus.svg" />
+          <span class="desktop-only">On campus</span>
+          </a>
+        </li>
+        <li>
+          <a href="#online">
+            <img class="mobile-only" src="resources/images/ic-online.svg" />
+            <span class="desktop-only">Online</span>
+          </a>
+        </li>
+        
+        <li class="lg-desktop-only">
+          <a href="#companies">For companies</a>
+        </li>
+        
+        <li>
+          <a href="#signin">
+            <img class="mobile-only" src="resources/images/ic-login.svg" />
+            <span class="desktop-only">Sign in</span>
+          </a>
+        </li>
+      
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- CONTENT -->
+  <main>
+    <!-- section 1/top section -->
+    <section id="section-1">
+
+      <!-- banner section -->
+      <div class="section-1-banner">
+        <img src="resources/images/banner.jpg" alt="students studying">
+      </div>
+
+      <!-- content section -->
+      <div class="section-1-content">
+        <h1>Learn something<br />new everyday</h1>
+        <p>Lorem ipsum dolor sit amet,<br />consectetur adipiscing elit.</p>
+        <a href="#start-here">Start here</a>
+      </div>
 
     </section> <!-- section 1 -->
 
-        <!-- section 2 -->
-        <section id="section-2">
-        
-        <!-- section 2 -- main article disappears for mobile -->
-        <article class="section-2-main desktop-only">
-           <img src="resources/images/information-main.jpg" alt="man reading" />
-            <h2>It doesn't hurt to keep practicing</h2>
-            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</p>
-            <address>Emanuel, Sr. Strategist at <a href="http://hiring.com">Hiring.com</a></address>
-        </article>
-        
-        <!-- section 2 sub articles side -->
-        <div class="section-2-subs">
-            
-            <!-- sub article #1 -->
-            <article class="section-2-sub-article">
-                 <div class="section-2-sub-img">
-                    <img class="desktop-only" src="resources/images/information-orientation.jpg" alt="orientation image" />
-                    <img class="mobile-only" src="resources/images/information-orientation-mobile.jpg" alt="orientation image" />
-                </div>
-                <div class="section-2-sub-content">
-                    <h3>Orientation date</h3>
-                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                    <a href="#readmore-1">Read more</a>
-                </div>
-            </article>
-            
-            <!-- sub article #2 -->
-            <article class="section-2-sub-article">
-                 <div class="section-2-sub-img">
-                    <img class="desktop-only" src="resources/images/information-campus.jpg" alt="campus image" />
-                    <img class="mobile-only" src="resources/images/information-campus-mobile.jpg" alt="campus image" />
-                </div>
-                <div class="section-2-sub-content">
-                    <h3>Our campus</h3>
-                    <p>Find which campus is close to you</p>
-                    <a href="#readmore-2">Read more</a>
-                </div> 
-            </article>
+    <!-- section 2 -->
+    <section id="section-2">
 
-            <!-- sub article #3 -->
-            <article class="section-2-sub-article">
-                <div class="section-2-sub-img">
-                    <img class="desktop-only" src="resources/images/information-guest-lecture.jpg" alt="guest lecture image" />
-                    <img class="mobile-only" src="resources/images/information-guest-lecture-mobile.jpg" alt="guest lecture image" />
-                </div>
-                <div class="section-2-sub-content">
-                    <h3>Our guest lecture</h3>
-                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                    <a href="#readmore-3">Read more</a>
-                </div>
-            </article>
-        </div> <!-- subarticles -->
+      <!-- section 2 -- main article disappears for mobile -->
+      <article class="section-2-main desktop-only">
+        <img src="resources/images/information-main.jpg" alt="man reading" />
+        <h2>It doesn't hurt to keep practicing</h2>
+        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</p>
+        <address>Emanuel, Sr. Strategist at <a href="http://hiring.com">Hiring.com</a></address>
+      </article>
+
+      <!-- section 2 sub articles side -->
+      <div class="section-2-subs">
+
+        <!-- sub article #1 -->
+        <article class="section-2-sub-article">
+          <div class="section-2-sub-img">
+            <img class="desktop-only" src="resources/images/information-orientation.jpg" alt="orientation image" />
+            <img class="mobile-only" src="resources/images/information-orientation-mobile.jpg" alt="orientation image" />
+          </div>
+          <div class="section-2-sub-content">
+            <h3>Orientation date</h3>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#readmore-1">Read more</a>
+          </div>
+        </article>
+
+        <!-- sub article #2 -->
+        <article class="section-2-sub-article">
+          <div class="section-2-sub-img">
+            <img class="desktop-only" src="resources/images/information-campus.jpg" alt="campus image" />
+            <img class="mobile-only" src="resources/images/information-campus-mobile.jpg" alt="campus image" />
+          </div>
+          <div class="section-2-sub-content">
+            <h3>Our campus</h3>
+            <p>Find which campus is close to you</p>
+            <a href="#readmore-2">Read more</a>
+          </div> 
+        </article>
+
+        <!-- sub article #3 -->
+        <article class="section-2-sub-article">
+          <div class="section-2-sub-img">
+            <img class="desktop-only" src="resources/images/information-guest-lecture.jpg" alt="guest lecture image" />
+            <img class="mobile-only" src="resources/images/information-guest-lecture-mobile.jpg" alt="guest lecture image" />
+          </div>
+          <div class="section-2-sub-content">
+            <h3>Our guest lecture</h3>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <a href="#readmore-3">Read more</a>
+          </div>
+        </article>
+      </div> <!-- subarticles -->
 
     </section>
 
-        <!-- section 3 -->
-        <section id="section-3">
-            
-            <h2>Start learning</h2>
-            
-            <div class="course-catalog">
-            
-                <div class="course">
-                    <img class="desktop-only" src="resources/images/course-software.jpg" alt="PCs on desk">
-                    <article>
-                        <a href="#course-software"><h3>Software engineering</h3></a>
-                        <p class="desktop-only">COURSES</p>
-                        <p class="desktop-only">Web Development, Mobile Debelopment, iOT, APIs</p>
-                    </article>
-                </div>
-            
-                <div class="course">
-                    <img  class="desktop-only"src="resources/images/course-computer-art.jpg" alt="mobile phone in hand">
-                    <article>
-                        <a href="#course-software"><h3>Computer art</h3></a>
-                        <p class="desktop-only">COURSES</p>
-                        <p class="desktop-only">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Cmputer Animation</p>
-                    </article>
-                </div>
-            
-                <div class="course">
-                    <img  class="desktop-only" src="resources/images/course-design.jpg" alt="man adjusting camera lens">
-                    <article>
-                        <a href="#course-software"><h3>Design</h3></a>
-                        <p class="desktop-only">COURSES</p>
-                        <p class="desktop-only">User Experience Design, User Research, Visual Design</p>
-                    </article>
-                </div>
-            
-                <div class="course">
-                    <img class="desktop-only" src="resources/images/course-data.jpg" alt="charts on open laptop">
-                    <article>
-                        <a href="#course-software"><h3>Data</h3></a>
-                        <p class="desktop-only">COURSES</p>
-                        <p class="desktop-only">Data Science, Big Data, SQL, Data Visualization</p>
-                    </article>
-                </div>
-            
-                <div class="course">
-                    <img class="desktop-only" src="resources/images/course-business.jpg" alt="pieces on chess board">
-                    <article>
-                        <a href="#course-software"><h3>Business</h3></a>
-                        <p class="desktop-only">COURSES</p>
-                        <p class="desktop-only">Product Development, Business Development, Startuo</p>
-                    </article>
-                </div>
-            
-                <div class="course">
-                    <img class="desktop-only" src="resources/images/course-marketing.jpg" alt="man programming smartwatch">
-                    <article>
-                        <a href="#course-software"><h3>Marketing</h3></a>
-                        <p class="desktop-only">COURSES</p>
-                        <p class="desktop-only">Analytics, Content Marketing, Mobile Marketing</p>
-                    </article>
-                </div>
-            
-            </div>
+    <!-- section 3 -->
+    <section id="section-3">
 
-        </section>
-    
-        <!-- section 4 -->
-        <section id="section-4">
-            <h2>Thesis exhibit</h2>
-            <div class="section-4-content-box">
-            <article class="section-4-video-article">
-                <video autoplay muted loop controls><source src="resources/videos/thesis.mp4" type="video/mp4"></video>
-                <h3 class="desktop-only">Reimagine urban</h3>
-                <p class="desktop-only">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</p>
-            </article>
-        
-            <!-- section 4 sub articles side -->
-            <div class="section-4-subs desktop-only">
-            
-                <!-- sub article #1 -->
-                <article class="section-4-sub-article">
-                    <div class="section-4-sub-img">
-                        <img src="resources/images/thesis-fisma.jpg" alt="orientation image" />
-                    </div>
-                    <div class="section-4-sub-content">
-                        <h3>Fisma: Design and Prototype</h3>
-                        <p>Designer showcase of new prototype product</p>
-                    </div>
-            </article>
-            
-            <!-- sub article #2 -->
-            <article class="section-4-sub-article">
-                 <div class="section-4-sub-img">
-                    <img src="resources/images/thesis-now-and-then.jpg" alt="campus image" />
-                </div>
-                <div class="section-4-sub-content">
-                    <h3>Now and then</h3>
-                    <p>Research study about New York</p>
-                </div> 
-            </article>
-                </div>
-        </div> <!-- subarticles -->
+      <h2>Start learning</h2>
 
- 
-        </section>
-    </main>
-    
-    <!-- footer -->
-    <footer>
-        <div class="footer-left">
-        	<span>&#9400; 2016 Colmar Academy. All rights reserved</span>
+      <div class="course-catalog">
+
+        <div class="course">
+          <img class="desktop-only" src="resources/images/course-software.jpg" alt="PCs on desk">
+          <article>
+            <a href="#course-software"><h3>Software engineering</h3></a>
+            <p class="desktop-only">COURSES</p>
+            <p class="desktop-only">Web Development, Mobile Debelopment, iOT, APIs</p>
+          </article>
         </div>
-        <div class="footer-right desktop-only">
-            <div class="footer-right-left">
-                <span>Terms</span>
+
+        <div class="course">
+          <img  class="desktop-only"src="resources/images/course-computer-art.jpg" alt="mobile phone in hand">
+          <article>
+            <a href="#course-software"><h3>Computer art</h3></a>
+            <p class="desktop-only">COURSES</p>
+            <p class="desktop-only">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Cmputer Animation</p>
+          </article>
+        </div>
+
+        <div class="course">
+          <img  class="desktop-only" src="resources/images/course-design.jpg" alt="man adjusting camera lens">
+          <article>
+            <a href="#course-software"><h3>Design</h3></a>
+            <p class="desktop-only">COURSES</p>
+            <p class="desktop-only">User Experience Design, User Research, Visual Design</p>
+          </article>
+        </div>
+
+        <div class="course">
+          <img class="desktop-only" src="resources/images/course-data.jpg" alt="charts on open laptop">
+          <article>
+            <a href="#course-software"><h3>Data</h3></a>
+            <p class="desktop-only">COURSES</p>
+            <p class="desktop-only">Data Science, Big Data, SQL, Data Visualization</p>
+          </article>
+        </div>
+
+        <div class="course">
+          <img class="desktop-only" src="resources/images/course-business.jpg" alt="pieces on chess board">
+          <article>
+            <a href="#course-software"><h3>Business</h3></a>
+            <p class="desktop-only">COURSES</p>
+            <p class="desktop-only">Product Development, Business Development, Startuo</p>
+          </article>
+        </div>
+
+        <div class="course">
+          <img class="desktop-only" src="resources/images/course-marketing.jpg" alt="man programming smartwatch">
+          <article>
+            <a href="#course-software"><h3>Marketing</h3></a>
+            <p class="desktop-only">COURSES</p>
+            <p class="desktop-only">Analytics, Content Marketing, Mobile Marketing</p>
+          </article>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- section 4 -->
+    <section id="section-4">
+      <h2>Thesis exhibit</h2>
+      <div class="section-4-content-box">
+        <article class="section-4-video-article">
+          <video autoplay muted loop controls><source src="resources/videos/thesis.mp4" type="video/mp4"></video>
+          <h3 class="desktop-only">Reimagine urban</h3>
+          <p class="desktop-only">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.</p>
+        </article>
+
+        <!-- section 4 sub articles side -->
+        <div class="section-4-subs desktop-only">
+
+          <!-- sub article #1 -->
+          <article class="section-4-sub-article">
+            <div class="section-4-sub-img">
+              <img src="resources/images/thesis-fisma.jpg" alt="orientation image" />
             </div>
-            <div class="footer-right-right">
-                <span>Privacy</span>
+            <div class="section-4-sub-content">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
             </div>
-        </div>  
-            
-    </footer>
+          </article>
+
+          <!-- sub article #2 -->
+          <article class="section-4-sub-article">
+            <div class="section-4-sub-img">
+              <img src="resources/images/thesis-now-and-then.jpg" alt="campus image" />
+            </div>
+            <div class="section-4-sub-content">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div> 
+          </article>
+        </div>
+      </div> <!-- subarticles -->
+
+
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-left">
+      <span>&#9400; 2016 Colmar Academy. All rights reserved</span>
+    </div>
+    <div class="footer-right desktop-only">
+      <div class="footer-right-left">
+        <span>Terms</span>
+      </div>
+      <div class="footer-right-right">
+        <span>Privacy</span>
+      </div>
+    </div>  
+
+  </footer>
 
 </body>
 
