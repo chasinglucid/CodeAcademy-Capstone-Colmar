@@ -19,7 +19,7 @@ a {
 
 a:hover {
   background-color: #ff5602;
-  color: white;
+  color: #ffffff;
   border-radius: 0.375rem;
 }
 
@@ -36,7 +36,7 @@ h1 {
   margin-bottom: 0.67rem;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
   h1 {
     margin-bottom: 2rem;
@@ -72,12 +72,12 @@ header {
   justify-content: center;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
   header {
     justify-content: space-between;
   }
-}
+}/* mobile */
 
 /* navigation */
 header nav {
@@ -89,13 +89,13 @@ header nav {
   height: auto;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
   header nav {
     justify-content: space-between;
     min-width: 100%;
   }
-}
+} /* mobile */
 
 header nav ul {
   align-items: center;
@@ -107,13 +107,13 @@ header nav ul {
   width: 100%;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
   header nav ul {
     min-width: 100%;
     justify-content: space-between;
   }
-}
+}/* mobile */
 
 header nav ul li.left {
   margin-right: auto;
@@ -142,7 +142,6 @@ header nav ul li a {
 }
 
 /* school name and logo */
-
 .school a {
   display: flex;
   align-items: center;
@@ -155,7 +154,7 @@ header nav ul li a {
 
 .school-name {
   line-height: 2rem;
-  color: #9B9B9B;
+  color: #9b9b9b;
   font-weight: 100;
   display: flex;
   align-items: center;
@@ -164,285 +163,280 @@ header nav ul li a {
 
 .school-name-bold {
   font-weight: bold;
-  color: black;
+  color: #000000;
 }
 
 header a:hover span {
-  color: white;
+  color: #ffffff;
   border-radius: 0.375rem;
 }
 
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
   header nav ul li a:hover {
-    background-color: white;
+    background-color: #ffffff;
     color: inherit;
   }
-}
+} /* mobile */
 
 /*** MAIN ***/
 main {
-  border: 1px solid grey;
+  border: 1px solid #808080;
   border-bottom: none;
 }
 
-/**** section 1 ****/
-#section-1 {
+/**** BANNER ****/
+#banner {
   display: flex;
-  background-color:  #D8D8D8;
+  background-color:  #d8d8d8;
   padding: 2rem 1.5rem;
   justify-content: flex-start;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
-  #section-1 {
+  #banner {
     flex-direction: column;
     padding: 0;
   }
-}
+}/* mobile */
 
-.section-1-banner {
+#banner img {
   margin-right: 1.5rem;
   flex-basis: 60%;
+  width: 60%;
+  height: 100%;
 }
 
 /* mobile specific css */
 @media only screen and (max-width: 450px) {
-  .section-1-banner {
+  #banner img {
     padding: 0;
     width: 100%;
     margin: 0;
   }
 }
 
-.section-1-banner img {
-  max-width: 100%;
-}
-
-.section-1-content {
+#banner .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-basis: 30%;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
-  .section-1-content {
+  #banner .content {
     margin: 2rem 1rem;
     max-width: 100%;
   }
 
-  .section-1-content h1 {
+  #banner .content h1 {
     margin-bottom: 1rem; 
   }
-}
+}/* mobile */
 
-.section-1-content p {
+#banner .content p {
   font-weight: bold;
 }
 
-.section-1-content a {
-  background-color: #4A4A4A;
-  color: white;
+#banner .content a {
+  background-color: #4a4a4a;
+  color: #ffffff;
   padding: 0.5rem;
   text-align: center;
   border-radius: 0.375rem;
 }
 
-
-.section-1-content a:hover {
+#banner .content a:hover {
   background-color: #ff5602;
-  color: /*#4A4A4A*/ white;
-}
+  color: #ffffff;
+} 
 
-/**** SECTION 2 ****/
-#section-2 {
+/**** SCHOOL INFO ****/
+#school-info {
   display: flex;
   flex-direction: row;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
-  #section-2 {
+  #school-info {
     flex-direction: column;
   }
-}
+} /* mobile */
 
-.section-2-main {
+article.lg-article {
   flex-basis: 60%;
-  border-right: 1px solid lightgrey;
+  border-right: 1px solid #d3d3d3;
   padding: 2rem 1.5rem;
 }
 
-.section-2-main img {
+article.lg-article img {
   max-width: 100%;
 }
 
-.section-2-main  h2 {
+article.lg-article h2 {
   margin: 2rem 0 1.5rem 0;
 }
 
-.section-2-main p {
+article.lg-article p {
   font-style: italic;
   font-size: 0.95rem;
 }
 
-.section-2-main address {
+article.lg-article address {
   font-size: 0.75rem;
   font-style: italic;
 }
 
-.section-2-main address a {
+article.lg-article  address a {
   color: inherit;
 }
 
-.section-2-main address a:hover {
+article.lg-article address a:hover {
   background-color: inherit;
   color: #ff5602;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1rem;
   border-radius: 0;
 }   
 
-.section-2-subs {
+.announcements {
   flex-basis: 40%;
   display: flex;
   flex-direction: column;
   padding: 1rem 0 2rem;
 }
 
-/* mobile specific css */
+.announcements article {
+  border-top: 1px dotted #d3d3d3;
+  border-bottom: 1px dotted #d3d3d3;
+}
+
+/* mobile */
 @media only screen and (max-width: 450px) {
-  .section-2-subs {
+  .announcements {
     padding: 1rem;
     flex-basis:100%;
   }
-
-}
-
-.section-2-subs article {
-  border-top: 1px dotted lightgrey;
-  border-bottom: 1px dotted lightgrey;
-  margin-right: 1rem;
-}
-
-/* mobile specific css */
-@media only screen and (max-width: 450px) {
-  .section-2-subs article {
-    margin-right:  0;
+  
+  .announcements article {
     padding-bottom: 4rem;
   }
-}
+} /* mobile */
 
-.section-2-subs article:first-child {
+.announcements article:first-child {
   border-top: 0;
 }
 
-.section-2-subs article:last-child {
-  background-color:  #D8D8D8;
+.announcements article:last-child {
+  background-color:  #d8d8d8;
   border:0;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
-  .section-2-subs article:last-child {
+  .announcements article:last-child {
     background-color:  inherit;
   }
 
-  .section-2-subs article {
+  .announcements article {
     border: 0;
   }
-}
+} /* mobile */
 
-.section-2-sub-article {
+#school-info .announcements article {
   display: flex;
   flex-direction: row;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
-  .section-2-sub-article {
+  #school-info .announcements article {
     flex-direction: column;
     padding-bottom: 2rem;
   }
-}
+} /* mobile */
 
-.section-2-sub-img {
+.announcements-img {
   flex-basis: 35%;
   padding: 1rem;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
-  .section-2-sub-img {
+  .announcements-img {
     padding: 0;
     width: 100%;
   }
-}
+} /* mobile */
 
-.section-2-sub-img img {
+.announcements-img img {
   max-width: 100%;
 }
 
-.section-2-sub-content {
+.announcements-content {
   flex-basis: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
-  .section-2-sub-content {
+  .announcements-content {
     flex-basis: 100%;
     padding: 0 1rem;
   }
-}
+} /* mobile */
 
-.section-2-sub-content a {
+.announcements-content a {
   color: #37b6ee;
   font-weight: bold;
 }
 
-.section-2-sub-content a:hover {
+.announcements-content a:hover {
   background-color: inherit;
   color:  #ff5602;
 }
 
-.section-2-sub-content p {
+.announcements-content p {
   font-size: 0.9rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-.section-2-sub-content h3 {
+.announcements-content h3 {
   margin-bottom: 0.5rem;
   padding: 0;
 }
 
-/* mobile specific css */
+/* mobile */
 @media only screen and (max-width: 450px) {
-  .section-2-sub-content a {
+  .announcements-content a {
     font-size: 0.9rem;
   }
-}
+}  /* mobile */
 
-/**** section 3 ****/
+/**** COURSE INFO ****/
 
-#section-3 {
+#courses {
   background-color: #eaebec;
   padding: 2rem 4.5rem;
 }
 
+/* mobile */
 @media only screen and (max-width: 450px) {
-  #section-3 {
+  #courses {
     background-color: inherit;
     padding: 2rem 1rem;
   }
-}
+}  /* mobile */
 
-#section-3 h2 {
+#courses h2 {
   text-align: center;
   margin: 0 0 2rem 0;
 }
@@ -458,10 +452,10 @@ main {
 .course {
   flex-basis: 30%;
   margin: 0 2rem 2rem 0;
-  background-color: white;
+  background-color: #ffffff;
 }
 
-
+/* mobile */
 @media only screen and (max-width: 450px) {
   .course-catalog {
     flex-flow: column nowrap;
@@ -476,27 +470,29 @@ main {
   
   .course:hover {
     background-color: #ff5602;
-    color: white;
+    color: #ffffff;
     border-radius: 0.375rem;
   }
-}
+}  /* mobile */
 
 .course img {
   height; auto;
   max-width: 100%;
 }
 
+/* desktop */
 @media only screen and (min-width: 451px) {
   .course:nth-child(n+4) {
     margin-bottom: 0;
   }
-}
+} /*desktop */
 
+/* mobile */
 @media only screen and (max-width: 450px) {
   .course:last-child {
     margin-bottom: 0;
   }
-}
+} /* mobile */
 
 .course:nth-child(3n+3) {
   margin-right: 0;
@@ -510,11 +506,13 @@ main {
   color: #ff5602;
 }
 
+/* mobile */
 @media only screen and (max-width: 450px) {
   .course h3 {
     margin-bottom: 0;
   }
-}
+} /* mobile */
+
 .course p {
   margin: 0.5rem 0;
   color: #7a7a7a;
@@ -524,112 +522,122 @@ main {
   margin-bottom: 0;
 }
 
-/**** SECTION 4 ****/
-#section-4 {
+/**** THESIS ****/
+#thesis {
   display: flex;
   flex-direction: column;
 
 }
 
-#section-4 h2 {
+#thesis h2 {
   text-align: center;
   margin: 2rem 0 0 0;
 }
 
-#section-4 p {
+#thesis p {
   color: #959595;
 }
 
-.section-4-content-box {
+.thesis-container {
   display: flex;
   flex-direction: row;
   margin: 2rem 0 2rem 1.5rem;
 }
 
-.section-4-video-article {
+.video-article {
   flex-basis: 60%;
   margin: 0 1.5rem 0 0;
 }
 
-.section-4-video-article video {
+.thesis-container h3 a {
+  color: inherit;
+}
+.thesis-container h3 a:hover {
+  background-color: inherit;
+  color: #ff5602;
+}
+
+
+.video-article video {
   max-width: 100%;
 }
 
+/* mobile */
 @media only screen and (max-width: 450px) {
-  .section-4-content-box {
+  .thesis-container {
     margin: 1rem 0 1.5rem 0;
   }
-  .section-4-video-article {
+  
+  .video-article {
     width: 100%;
     flex-basis: 100%;
     margin: 0;
   }
-  .section-4-video-article video {
+  .video-article video {
     padding: 0;
     width: 100%;
     margin: 0;
   }
-}
+}  /* mobile */
 
-.section-4-video-article  h3 {
+.video-article  h3 {
   margin: 1.5 0 0.5rem 0;
 }
 
-.section-4-video-article p {
+.video-article p {
   font-style: italic;
   font-size: 0.95rem;
   margin-bottom: 0;
 }
 
-.section-4-subs {
+.thesis-articles {
   flex-basis: 40%;
   display: flex;
   flex-direction: column;
 }
 
-.section-4-subs article {
+.thesis-articles article {
   margin-right: 1rem;
 }
 
-.section-4-subs article:first-child {
+.thesis-articles article:first-child {
   border-top: 0;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
 }
 
 
-.section-4-sub-article {
+.thesis-article {
   display: flex;
   flex-direction: row;
 }
 
-
-.section-4-sub-img {
+.thesis-img {
   flex-basis: 35%;
   padding: 1rem;
 }
 
-.section-4-sub-img img {
+.thesis-img img {
   max-width: 100%;
 }
 
-.section-4-sub-content {
+.thesis-content {
   flex-basis: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.section-4-sub-content a {
+.thesis-content a {
   color: #37b6ee;
   font-weight: bold;
 }
 
-.section-4-sub-content a:hover {
+.thesis-content a:hover {
   background-color: inherit;
   color:  #ff5602;
 }
 
-.section-4-sub-content p {
+.thesis-content p {
   font-size: 0.9rem;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -638,8 +646,8 @@ main {
 /**** FOOTER ****/
 footer {
   padding: 1rem 1.5rem;
-  border: 1px solid grey;
-  border-top: 1px solid lightgrey;
+  border: 1px solid #808080;
+  border-top: 1px solid #d3d3d3;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -659,11 +667,13 @@ footer span {
   padding-right: 0.5rem;
 }
 
+/* catch-all */
+
 .mobile-only {
   display: none;
 }
 
-/* mobile specific css */
+/* mobile*/
 @media only screen and (max-width: 450px) {
   .desktop-only {
     display:none;
@@ -672,6 +682,6 @@ footer span {
   .mobile-only {
     display: flex;
   }
-} /* mobile css */
+} /* mobile */
 
 
